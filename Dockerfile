@@ -13,10 +13,10 @@ RUN npm install
 # Copy the rest of the project files to the working directory
 COPY . .
 
-RUN npx prisma generate
+# RUN npx prisma generate
 
 # Expose a port (if needed)
-EXPOSE 8080
+EXPOSE 3000
 
 # Define the command to run your application
 CMD [ "npm", "start" ]
